@@ -1,0 +1,452 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.2s;
+  font-family: "Saira", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&family=TASA+Explorer:wght@400..800&display=swap");
+
+:root {
+  --bg--color1: #0f0f13;
+  --bg--color2: #121216;
+  --bg--color3: #28282c;
+  --font--color1: #f5f6f5;
+  --font--color2: #d7d7d7;
+  --sec--color: #5b2986;
+}
+
+body {
+  background-color: var(--bg--color1);
+}
+/* Header */
+header {
+  width: 100%;
+  height: 70px;
+  background-color: var(--bg--color1);
+}
+
+#now {
+  border-bottom: 1px solid var(--sec--color);
+  border-radius: 7px;
+}
+
+nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+nav .logo {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 120px;
+}
+
+nav .text {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text a {
+  padding: 5px 20px;
+  text-decoration: none;
+  color: var(--font--color1);
+}
+
+.text a:hover {
+  box-shadow: 2px 4px 10px var(--sec--color);
+  border-radius: 15px;
+}
+
+nav .icons {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 25%;
+}
+
+nav .icons .download:hover {
+  box-shadow: #8f4cc9d2 3px 3px 10px;
+}
+
+.icons h4 {
+  color: var(--font--color1);
+  padding: 7px 10px;
+  margin: 10px;
+}
+
+.download {
+  background-color: var(--sec--color);
+  border-radius: 17px;
+}
+
+.sign {
+  background-color: rgb(153, 151, 151);
+  border-radius: 17px;
+}
+
+/* Hero */
+.Hero {
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(
+      rgba(46, 44, 45, 0.623),
+      rgba(146, 33, 118, 0.596)
+    ),
+    url("/imgs/hero.jpg");
+  background-size: cover;
+}
+
+.Text {
+  color: var(--font--color2);
+  width: 40%;
+  height: 100%;
+  margin-left: 3%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Text img {
+  width: 200px;
+  margin: 10px 20px;
+}
+
+.Text h3 {
+  margin: 20px;
+}
+
+.butoon input {
+  background-color: orange;
+  border-radius: 10px;
+  border: none;
+  margin: 10px 20px;
+  padding: 10px 5px;
+  width: 70px;
+  color: var(--font--color1);
+}
+
+.new {
+  width: 100%;
+  height: 90vh;
+  background-color: var(--bg--color3);
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.new h2 {
+  font-size: 40px;
+  color: var(--font--color2);
+}
+
+.Games {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space;
+  gap: 7px;
+  align-items: center;
+}
+
+
+.fifa {
+  margin: 30px;
+  width: 200px;
+  height: 300px;
+  background-color: #f5f6f5;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  color: var(--font--color1);
+  padding: 20px;
+}
+
+.fifa:hover {
+  border-bottom: var(--sec--color) 2px solid;
+  box-shadow: 2px 0 10px #5b2986;
+  scale: 1.1;
+}
+
+.fifa h3 {
+  font-size: 15px;
+}
+
+ .assain {
+  background: linear-gradient(rgba(0, 0, 0, 0.082), rgba(0, 0, 0, 0.767)),
+    url("/imgs/assassin.jpeg");
+    background-size: cover;
+    color: var(--font--color1);
+  }
+  
+  .assain:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0) , rgba(0, 0, 0, 0.377)),
+    url("/imgs/assassin.jpeg");
+    background-size: cover;
+    
+  }
+  
+ .ffia {
+    background: linear-gradient(rgba(0, 0, 0, 0.171), rgba(0, 0, 0, 0.767)),
+    url("/imgs/fifa.jpeg");
+    background-size: cover;
+    color: var(--font--color1);
+  }
+  
+  .ffia:hover {
+    
+    background: linear-gradient(rgba(0, 0, 0, 0) , rgba(0, 0, 0, 0.377)),
+    url("/imgs/fifa.jpeg");
+    background-size: cover;
+  }
+  
+ .gta {
+    background: linear-gradient(rgba(0, 0, 0, 0.171), rgba(0, 0, 0, 0.767)),
+    url("/imgs/gta.jpg");
+    background-size: cover;
+    color: var(--font--color1);
+  }
+  
+  .gta:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0) , rgba(0, 0, 0, 0.377)),
+  url("/imgs/gta.jpg");
+  background-size: cover;
+  
+}
+
+ .rocket {
+  background: linear-gradient(rgba(0, 0, 0, 0.171), rgba(0, 0, 0, 0.767)),
+  url("/imgs/rocket.jpeg");
+  background-size: cover;
+  color: var(--font--color1);
+}
+
+.rocket:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0) , rgba(0, 0, 0, 0.377)),
+  url("/imgs/rocket.jpeg");
+  background-size: cover;
+  
+}
+
+.mafia {
+  background: linear-gradient(rgba(0, 0, 0, 0.171), rgba(0, 0, 0, 0.767)),
+  url("/imgs/mafia.jpg");
+  background-size: cover;
+  color: var(--font--color1);
+}
+
+.mafia:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0) , rgba(0, 0, 0, 0.377)),
+  url("/imgs/mafia.jpg");
+  background-size: cover;
+
+}
+
+.best {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg--color2);
+}
+
+
+
+.best-seler {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  font-size: 30px;
+  background-color: #3131d1;
+}
+
+.big {
+  margin: 30px;
+  width: 20%;
+  height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.205), rgba(0, 0, 0, 0.308)),
+  url("/imgs/minecraft-game.avif");
+  background-position: center; 
+  background-repeat : no-repeat;
+  background-size: contain; 
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  border-radius: 15px;
+}
+
+.big:hover {
+  
+  border-bottom: var(--sec--color) 2px solid;
+  box-shadow: 2px 0 10px #5b2986;
+  scale: 1.1;
+}
+
+.market {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin: 7px;
+  background-color: #ffffff;
+  background: url('/imgs/plus\ \(1\).png');
+}
+
+.market img {
+  width: 25px;
+  height: 25px;
+}
+
+.cgame {
+    align-items: center;
+  justify-content: center;
+  margin: 30px;
+  width: 50%;
+  height: 400px;
+}
+
+.game:hover {
+  border-bottom: var(--sec--color) 2px solid;
+  box-shadow: 2px 0 10px #5b2986;
+  scale: 1.1;
+
+}
+
+.game {
+    border-radius: 15px;
+  width: 80%;
+  height: 75px;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  display: flex;
+  margin: 20px;
+}
+
+
+
+.fc {
+  background: linear-gradient(rgba(0, 0, 0, 0.205), rgba(0, 0, 0, 0.151)),
+    url("/imgs/fc26.png");
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+.Gta {
+  background: linear-gradient(rgba(0, 0, 0, 0.205), rgba(0, 0, 0, 0.151)),
+    url("/imgs/gat2.webp.png");
+  background-size: cover;
+  background-position: center; /* يخلي الصورة في النص */
+  background-repeat: no-repeat; /* ما تتكررش */
+}
+
+.fort {
+  background: linear-gradient(rgba(0, 0, 0, 0.205), rgba(0, 0, 0, 0.151)),
+    url("/imgs/fort2.webp");
+  background-size: cover;
+  background-position: center; /* يخلي الصورة في النص */
+  background-repeat: no-repeat; /* ما تتكررش */
+}
+
+.roblox {
+  background: linear-gradient(rgba(0, 0, 0, 0.205), rgba(0, 0, 0, 0.151)),
+    url("/imgs/robloxwebp.webp");
+  background-size: cover;
+  background-position: center; /* يخلي الصورة في النص */
+  background-repeat: no-repeat; /* ما تتكررش */
+}
+
+.section3 {
+  width: 100%;
+  height: 600px;
+  display: flex;
+}
+
+.big2 {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.big2-img {
+  width: 80%;
+  height: 500px;
+  background-color: #d7d7d7;
+  margin: 20px;
+  border-radius: 20px;
+  background: url('/imgs/gtabig2.webp');
+  background-size: cover;
+}
+
+.textbigimg {
+  width: 50%;
+  height: 100%;
+  color: var(--font--color2);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  gap: 10px;
+  color: #28282c;
+}
+
+.textbigimg h2 {
+font-size: 40px;
+}
+
+.textbigimg p {
+  font-size: 20px;
+}
+.mini {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mini1 {
+  width: 150px;
+  height: 75px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: var(--bg--color2);
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 10px;
+}
+
+.mini1:hover {
+  background-color: #28282c;
+  scale: 1.1;
+    box-shadow: 2px 1px 10px #5b2986;
+}
+
+.mini1 h3 {
+  color: var(--font--color2);
+  font-size: 15px;
+}
+
+.mini2 {
+  width: 35px;
+  height: 50px;
+  border-radius: 7px;
+}
